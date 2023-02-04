@@ -1,0 +1,59 @@
+.list-footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 52px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: rgb(243, 240, 240);
+    p {
+        font-size: 16px;
+        color: gray;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+}
+.filter-box-all {
+    width: 16px;
+    height: 16px;
+    border: 2px solid gray;
+    margin: 1rem;
+}
+.filter-box-all.all {
+    background-color: gray;
+    animation: 0.5s rollIn linear;
+    border-radius: 16px;
+    transition: 1s;
+}
+.filter-box-comp {
+    width: 16px;
+    height: 16px;
+    border: 2px solid gray;
+    margin: 1rem;
+}
+.filter-box-comp.complete {
+    background-color: gray;
+    animation: 0.5s rollIn linear;
+    border-radius: 16px;
+    transition: 1s;
+}
+.filter-box-act {
+    width: 16px;
+    height: 16px;
+    border: 2px solid gray;
+    margin: 1rem;
+}
+.filter-box-act.active {
+    background-color: gray;
+    animation: 0.5s rollIn linear;
+    border-radius: 16px;
+    transition: 1s;
+}
+@keyframes rollIn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

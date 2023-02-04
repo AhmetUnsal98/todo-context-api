@@ -1,23 +1,23 @@
+import Form from "./components/Form";
+import Header from "./components/Header";
 import "./App.css";
-
+import List from "./components/List";
+import ListFooter from "./components/ListFooter";
+import Footer from "./components/Footer";
+import { TodoContextProvider } from "./context/TodoContext";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoContextProvider>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="App">
+          <Header />
+          <Form />
+          <List />
+          <ListFooter />
+          <Footer />
+        </div>
+      </div>
+    </TodoContextProvider>
   );
 }
 

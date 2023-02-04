@@ -1,0 +1,46 @@
+.list-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 62px;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: rgb(243, 240, 240);
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    .checkbox {
+        height: 32px;
+        width: 32px;
+        border: 4px solid gray;
+        margin: 1rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .checkbox.completed {
+        border-left: 0px;
+        border-top: 0px;
+        width: 16px;
+        rotate: 45deg;
+        transition: 0.5s;
+        border-right: 4px solid green;
+        border-bottom: 4px solid green;
+    }
+    p {
+        font-size: 2rem;
+        color: gray;
+        text-align: center;
+        margin: 1rem;
+    }
+    p.completed {
+        text-decoration: line-through;
+    }
+    p:nth-child(3) {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,53 @@
+.form-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    p {
+        color: red;
+        text-align: center;
+    }
+}
+.form-container {
+    display: flex;
+    flex-direction: row;
+    height: 82px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: rgb(243, 240, 240);
+
+    input {
+        background-color: transparent;
+        border: 0px;
+        flex: 1;
+        font-size: 2rem;
+        color: gray;
+        text-align: center;
+        padding-left: 3rem;
+    }
+    input:focus {
+        outline: none;
+    }
+    button {
+        display: inline-block;
+        background-color: transparent;
+        border: 0px;
+        font-size: 3.5rem;
+        color: gray;
+        position: relative;
+        right: 0;
+        cursor: pointer;
+    }
+    button:hover {
+        transition: transform 0.5s;
+        animation: 1s rotateCross infinite;
+    }
+    @keyframes rotateCross {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
